@@ -29,7 +29,14 @@ export class SingleItem extends Component {
           const item = data.item;
           return (
             <SingleItemStyles>
+              <Head>
+                <title>Dresspress | {item.title}</title>
+              </Head>
               <img src={item.largeImage} alt={item.title} />
+              <div className="details">
+                <h2>Viewing: {item.title}</h2>
+                <p>{item.description}</p>
+              </div>
             </SingleItemStyles>
           );
         }}
@@ -48,4 +55,13 @@ const SingleItemStyles = styled.div`
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
   min-height: 800px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .details {
+    margin: 3rem;
+    font-size: 2rem;
+  }
 `;
