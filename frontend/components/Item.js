@@ -20,7 +20,7 @@ export default class Item extends Component {
         <Title>
           <Link
             href={{
-              pathName: '/item',
+              pathname: '/item',
               query: { id: item.id }
             }}
           >
