@@ -11,13 +11,13 @@ const Nav = () => {
       <Link href="/sell">
         <a>Sell</a>
       </Link>
-      <Link href="/">
+      <Link href="/signup">
         <a>Signup</a>
       </Link>
-      <Link href="/">
+      <Link href="/orders">
         <a>Orders</a>
       </Link>
-      <Link href="/">
+      <Link href="/account">
         <a>Account</a>
       </Link>
     </NavStyles>

@@ -334,7 +334,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "Sell")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+    href: "/signup",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
@@ -347,7 +347,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "Signup")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+    href: "/orders",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -360,7 +360,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "Orders")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+    href: "/account",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
