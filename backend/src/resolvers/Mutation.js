@@ -1,3 +1,5 @@
+const bcrypt = require('bcryptjs');
+
 const Mutations = {
   async createItem(parent, args, context, info) {
     const item = await context.db.mutation.createItem(
@@ -28,6 +30,18 @@ const Mutations = {
     const item = await context.db.query.item({ where }, `{id,title}`);
 
     return context.db.mutation.deleteItem({ where }, info);
+  },
+  async signup(parent, args, context, info) {
+    args.email = args.email.toLowerCase();
+    const password = await bcrypt.hash(args.password, 10);
+    const user = await context.db.mutation.createUser(
+      {
+        ...args,
+        password,
+        permissions: { set: ['USER'] }
+      },
+      info
+    );
   }
 };
 
