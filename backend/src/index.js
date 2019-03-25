@@ -7,6 +7,11 @@ const server = createServer();
 
 server.express.use(cookieParser());
 
+server.express.use((req, res ,next) => {
+  console.log('Express Middleware');
+  next();
+})
+
 server.start(
   {
     cors: {
